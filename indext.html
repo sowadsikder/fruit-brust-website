@@ -4,13 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- DaisyUi library for Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- TailwindCss -->
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Fruit Brust Website</title>
+    <!-- Custom Tailwind Css -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        backgound: '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom Css Styling -->
+    <style>
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
-<body>
-     
-    <header>
+
+<body class="font-poppins">
+
+    <header class="md:container md:mx-auto">
+
+        <nav>
+           
+        </nav>
+        <!-- Slider Or Carousel Section Start Here-->
+
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full justify-center">
+                <img src="/images/banner1.png" class="w-full" />
+                <div class="absolute justify-center mx-16 md:mx-[270px] lg:mx-[270px] my-4 lg:my-10">
+                    <h4 class="md:text-5xl text-xl text-white text-center font-extrabold mb-1 md:mb-5">Exotic tastes at
+                        your doorstep</h4>
+                    <p class="text-xs md:text-base text-center font-medium text-white mb-2 md:mb-5">We supply highly
+                        quality organic products</p>
+                    <div class="text-center">
+                        <button class="btn bg-backgound border-none text-white cursor-pointer">Shop Now</button>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="/images/banner2.png" class="w-full" />
+                <div class="absolute justify-center mx-16 md:mx-[270px] lg:mx-[270px] my-4 lg:my-10">
+                    <h4 class="md:text-5xl text-xl text-white text-center font-extrabold mb-1 md:mb-5">Exotic tastes at
+                        your doorstep</h4>
+                    <p class="text-xs md:text-base text-center font-medium text-white mb-2 md:mb-5">We supply highly
+                        quality organic products</p>
+                    <div class="text-center">
+                        <button class="btn bg-backgound border-none text-white cursor-pointer">Shop Now</button>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="/images/banner3.png" class="w-full" />
+                <div class="absolute justify-center mx-16 md:mx-[270px] lg:mx-[270px] my-4 lg:my-10">
+                    <h4 class="md:text-5xl text-xl text-white text-center font-extrabold mb-1 md:mb-5">Exotic tastes at
+                        your doorstep</h4>
+                    <p class="text-xs md:text-base text-center font-medium text-white mb-2 md:mb-5">We supply highly
+                        quality organic products</p>
+                    <div class="text-center">
+                        <button class="btn bg-backgound border-none text-white cursor-pointer">Shop Now</button>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="/images/banner4.png" class="w-full" />
+                <div class="absolute justify-center mx-16 md:mx-[270px] lg:mx-[270px] my-4 lg:my-10">
+                    <h4 class="md:text-5xl text-xl text-white text-center font-extrabold mb-1 md:mb-5">Exotic tastes at
+                        your doorstep</h4>
+                    <p class="text-xs md:text-base text-center font-medium text-white mb-2 md:mb-5">We supply highly
+                        quality organic products</p>
+                    <div class="text-center">
+                        <button class="btn bg-backgound border-none text-white cursor-pointer">Shop Now</button>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
 
 
 
@@ -25,7 +123,7 @@
 
     <footer>
 
-        
+
 
     </footer>
 
