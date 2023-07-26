@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -20,7 +20,9 @@
             theme: {
                 extend: {
                     colors: {
-                        backgound: '#F85559',
+                        'backgound': '#F85559',
+                        'color':'#F85559',
+                        'lines': '#1212121A',
                     }
                 }
             }
@@ -30,6 +32,9 @@
     <style>
         .font-poppins {
             font-family: 'Poppins', sans-serif;
+        }
+        .lines{
+            height: 1px;
         }
     </style>
 </head>
@@ -47,7 +52,7 @@
             <div id="slide1" class="carousel-item relative w-full justify-center">
                 <img src="/images/banner1.png" class="w-full" />
                 <div class="absolute justify-center mx-16 md:mx-[270px] lg:mx-[270px] my-4 lg:my-10">
-                    <h4 class="md:text-5xl text-xl text-white text-center font-extrabold mb-1 md:mb-5">Exotic tastes at
+                    <h4 class="md:md:text-5xl text-xl text-white text-center font-extrabold mb-1 md:mb-5">Exotic tastes at
                         your doorstep</h4>
                     <p class="text-xs md:text-base text-center font-medium text-white mb-2 md:mb-5">We supply highly
                         quality organic products</p>
@@ -115,9 +120,72 @@
 
     </header>
 
-    <main>
+    <main class="md:container md:mx-auto">
+        
+        <!-- Deal Of the Day Section Start Here-->
+
+        <div class="my-10 md:my-20 mx-5 md:mx-0">
+            <div class="md:flex flex-none center-none">
+                <div class="flex-1">
+                    <h3 class="text-xl text-center md:text-left md:text-5xl font-extrabold mb-3 md:mb-6">Deal of the day</h3>
+                    <p class="text-sm md:text-base font-medium mb-12 w-auto md:w-4/5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class=" ">
+                    <div class="grid grid-flow-col gap-3 md:gap-5 text-center md:auto-cols-max md:mt-8">
+                        <div class="flex flex-col text-xs md:text-base">
+                          <span class="countdown font-extrabold text-3xl md:text-5xl mb-2">
+                            <span style="--value:29;"></span>
+                          </span>
+                          Days
+                        </div> 
+                        <div class="flex flex-col">
+                            <span class="my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg></span>
+                            </span>
+                        </div>
+                        <div class="flex flex-col text-xs md:text-base">
+                          <span class="countdown font-extrabold text-3xl md:text-5xl mb-2">
+                            <span style="--value:15;"></span>
+                          </span>
+                          Hours
+                        </div> 
+                        <div class="flex flex-col ">
+                            <span class="my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg></span>
+                            </span>
+                        </div>
+                        <div class="flex flex-col text-xs md:text-base">
+                          <span class="countdown font-extrabold  text-3xl md:text-5xl mb-2">
+                            <span style="--value:25;"></span>
+                          </span>
+                          Minutes
+                        </div> 
+                        <div class="flex flex-col">
+                            <span class="my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg></span>
+                            </span>
+                        </div>
+                        <div class="flex flex-col text-xs md:text-base">
+                          <span class="countdown font-extrabold text-3xl md:text-5xl mb-2">
+                            <span style="--value:08;"></span>
+                          </span>
+                          Seconds
+                        </div> 
+                      </div>
+                </div>
+            </div>
 
 
+            </div>
+        </div>
+
+        
 
     </main>
 
