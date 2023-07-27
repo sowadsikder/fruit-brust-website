@@ -52,7 +52,7 @@
   <header class="md:container md:mx-auto">
     <!-- Navbar Section Start Here -->
 
-    <nav class="my-12">
+    <nav class="my-12 lg:mx-5">
       <div class="navbar lg:bg-background lg:rounded-full lg:py-3">
         <div class="navbar-start lg:text-white">
           <div class="navbar-center hidden lg:flex">
@@ -288,12 +288,12 @@
 
     <!-- Slider Or Carousel Section Start Here-->
 
-    <div class="carousel w-full h-[40vh] md:h-auto">
+    <div class="carousel h-[60vh] md:h-min relative md:mx-3 lg:mx-5">
       <div id="slide1"
         class="carousel-item relative w-full justify-center  bg-gradient-to-r from-[#121212] to-[#1212121A]">
         <img src="./images/banner1.png" class="w-full" />
-        <div class="absolute justify-center mx-16 md:mx-[270px] lg:mx-[270px] my-4 lg:my-10">
-          <h4 class="md:md:text-5xl text-xl text-white text-center font-extrabold mb-1 md:mb-5">Exotic tastes
+        <div class="absolute justify-center mx-16  lg:mx-[270px] my-4 lg:my-10">
+          <h4 class=" md:text-4xl text-xl text-white text-center font-extrabold mb-1 md:mb-5">Exotic tastes
             at
             your doorstep</h4>
           <p class="text-xs md:text-base text-center font-medium text-white mb-2 md:mb-5">We supply highly
@@ -375,28 +375,57 @@
         </div>
       </div>
     </div>
+
     <!-- Slider Or Carousel Section End Here-->
+
+    <div class= "container absolute top-[500px] hidden md:hidden lg:block">
+      <div class="flex w-[900px] h-52 mx-auto border justify-around text-center bg-white shadow-2xl rounded-lg ">
+
+        <div class="py-5">
+          <img src="./images/fruit4.png" alt="">
+          <p>Strawberry</p>
+        </div>
+        <div class="py-5">
+          <img src="./images/fruit2.png" alt="">
+          <p>Orange</p>
+        </div>
+        <div class="py-5">
+          <img src="./images/fruit3.png" alt="">
+          <p>Mango</p>
+        </div>
+        <div class="py-5">
+          <img src="./images/fruit1.png" alt="">
+          <p>Red Grapes</p>
+        </div>
+        <div class="py-5">
+          <img src="./images/fruit5.png" alt="">
+          <p>Pomegranate</p>
+        </div>
+
+      </div>
+    </div>
+
 
   </header>
 
   <main class="md:container md:mx-auto">
 
     <!-- Deal Of the Day Section Start Here-->
-    <section class=" my-10 md:my-20">
+    <section class=" my-10 md:mt-20 md:mx-3 lg:mt-60 lg:mx-5">
       <div class="mb-10 md:mb-20 mx-5 md:mx-0">
-        <div class="md:flex flex-none center-none">
-          <div class="flex-1">
-            <h3 class="text-2xl text-center md:text-left md:text-5xl font-extrabold mb-3 md:mb-6">Deal of the
+        <div class="lg:flex md:flex-row  flex-none center-none">
+          <div class="">
+            <h3 class="text-2xl text-center lg:text-left md:text-5xl font-extrabold mb-3 md:mb-6">Deal of the
               day
             </h3>
-            <p class="text-sm md:text-base font-medium mb-12 w-auto md:w-4/5">Contrary to popular belief, is
+            <p class="text-sm md:text-base font-medium mb-12 w-auto lg:w-4/5">Contrary to popular belief, is
               not
               simply random text. It has roots in a piece of classical Latin literature from 45 BC, making
               it
               over 2000 years old.</p>
           </div>
           <div class=" ">
-            <div class="grid grid-flow-col gap-1 md:gap-5 text-center md:auto-cols-max md:mt-8">
+            <div class="grid grid-flow-col md:grid-flow-col gap-1 md:gap-5 text-center md:justify-center md:auto-cols-max md:mt-8">
               <div class="flex flex-col text-[8px] md:text-base">
                 <span class="countdown font-extrabold text-xl md:text-5xl mb-2">
                   <span style="--value:29;"></span>
@@ -459,7 +488,7 @@
 
         <!-- First Card Style Start Here -->
 
-        <div class="card w-64 lg:w-96 bg-base-100 shadow-2xl border mb-10">
+        <div class="card w-80 lg:w-96 bg-base-100 shadow-2xl border mb-10">
           <figure class="px-10 pt-10">
             <img src="./images/fruit6.png" alt="fruit6" class="rounded-xl" />
           </figure>
@@ -485,7 +514,7 @@
               <!-- You can open the modal using ID.showModal() method -->
               <a class="text-color hover:text-black cursor-pointer" onclick="my_modal_1.showModal()">Details</a>
               <dialog id="my_modal_1" class="modal">
-                <form method="dialog" class="modal-box w-60 lg:w-96 max-w-5xl">
+                <form method="dialog" class="modal-box w-80 lg:w-96 max-w-5xl">
                   <figure class="px-10 pt-10">
                     <img src="./images/fruit6.png" alt="fruit6" class="rounded-xl" />
                   </figure>
@@ -524,7 +553,7 @@
 
         <!-- Second Card Style Start Here -->
 
-        <div class="card w-64 lg:w-96 bg-base-100 shadow-2xl border mb-10">
+        <div class="card w-80 lg:w-96 bg-base-100 shadow-2xl border mb-10">
           <figure class="px-10 pt-10">
             <img src="./images/fruit7.png" alt="fruit7" class="rounded-xl" />
           </figure>
@@ -550,7 +579,7 @@
               <!-- You can open the modal using ID.showModal() method -->
               <a class="text-color hover:text-black cursor-pointer" onclick="my_modal_2.showModal()">Details</a>
               <dialog id="my_modal_2" class="modal">
-                <form method="dialog" class="modal-box w-60 lg:w-96 max-w-5xl">
+                <form method="dialog" class="modal-box w-80 lg:w-96 max-w-5xl">
                   <figure class="px-10 pt-10">
                     <img src="./images/fruit7.png" alt="fruit7" class="rounded-xl" />
                   </figure>
@@ -589,7 +618,7 @@
 
         <!-- Third Card Style Start Here -->
 
-        <div class="card w-64 lg:w-96 bg-base-100 shadow-2xl border mb-10">
+        <div class="card w-80 lg:w-96 bg-base-100 shadow-2xl border mb-10">
           <figure class="px-10 pt-10">
             <img src="./images/fruit8.png" alt="fruit8" class="rounded-xl" />
           </figure>
@@ -615,7 +644,7 @@
               <!-- You can open the modal using ID.showModal() method -->
               <a class="text-color hover:text-black cursor-pointer" onclick="my_modal_3.showModal()">Details</a>
               <dialog id="my_modal_3" class="modal">
-                <form method="dialog" class="modal-box w-60 lg:w-96 max-w-5xl">
+                <form method="dialog" class="modal-box w-80 lg:w-96 max-w-5xl">
                   <figure class="px-10 pt-10">
                     <img src="./images/fruit8.png" alt="fruit8" class="rounded-xl" />
                   </figure>
@@ -654,7 +683,7 @@
 
         <!-- Four Card Style Start Here -->
 
-        <div class="card w-64 lg:w-96 bg-base-100 shadow-2xl border mb-10">
+        <div class="card w-80 lg:w-96 bg-base-100 shadow-2xl border mb-10">
           <figure class="px-10 pt-10">
             <img src="./images/fruit9.png" alt="fruit9" class="rounded-xl" />
           </figure>
@@ -680,7 +709,7 @@
               <!-- You can open the modal using ID.showModal() method -->
               <a class="text-color hover:text-black cursor-pointer" onclick="my_modal_4.showModal()">Details</a>
               <dialog id="my_modal_4" class="modal">
-                <form method="dialog" class="modal-box w-60 lg:w-96 max-w-5xl">
+                <form method="dialog" class="modal-box w-80 lg:w-96 max-w-5xl">
                   <figure class="px-10 pt-10">
                     <img src="./images/fruit9.png" alt="fruit9" class="rounded-xl" />
                   </figure>
@@ -1004,7 +1033,7 @@
 
     <!-- Why Choose Us Section Start Here -->
 
-    <section class="my-20">
+    <section class="my-20 lg:mx-5">
 
       <div class="text-center">
         <h3 class="text-5xl font-extrabold mb-5">Why Choose Us</h3>
@@ -1012,7 +1041,7 @@
           has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
       </div>
 
-      <div class="flex flex-col lg:flex-row gap-10">
+      <div class="flex flex-col lg:flex-row gap-10 mx-4 lg:mx-0">
 
         <div class="flex-1 order-2 lg:order-1">
           <!-- First -->
@@ -1063,7 +1092,7 @@
           <!-- Third -->
 
           <div class="">
-            <div class="relative flex gap-5">
+            <div class="relative flex  gap-5">
               <a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
                   <circle cx="30" cy="30" r="30" fill="#121212" fill-opacity="0.1" />
@@ -1106,7 +1135,7 @@
 
         <div class="flex-1 order-1 lg:order-2 p-2 lg:p-0">
           <div>
-            <img src="./images/whychoose1.png" alt="">
+            <img src="./images/whychoose1.png" alt="" class="md:w-full">
           </div>
         </div>
 
@@ -1114,7 +1143,7 @@
 
         <div class="flex-1 order-3 lg:order-3">
           <div class="text-right">
-            <div class="relative flex gap-5 justify-end">
+            <div class="relative flex gap-5  justify-end">
               <h3 class="text-xl font-extrabold">Integrated Supplier</h3>
               <a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
@@ -1143,7 +1172,7 @@
                 </svg>
               </a>
             </div>
-            <hr class="w-24 h-[1px] bg-liner ml-[134px] -mt-6  mb-2">
+            <hr class="w-24 h-[1px] bg-liner lg:ml-[120px] -mt-6  mb-2">
           </hr>
           <p class="text-sm font-medium mr-20 mb-5">Professional employees are there for you to pick the most amazing and
             fresh fruits.</p>
@@ -1166,7 +1195,7 @@
                 </svg>
               </a>
             </div>
-            <hr class="w-24 h-[1px] bg-liner ml-[134px] -mt-6  mb-2">
+            <hr class="w-24 h-[1px] bg-liner ml-[120px] -mt-6  mb-2">
             </hr>
             <p class="text-sm font-medium mr-20 mb-5">Professional employees are there for you to pick the most amazing and
               fresh fruits.</p>
@@ -1193,7 +1222,7 @@
                 </svg>
               </a>
             </div>
-            <hr class="w-24 h-[1px] bg-liner ml-[134px] -mt-6  mb-2">
+            <hr class="w-24 h-[1px] bg-liner ml-[120px] -mt-6  mb-2">
             </hr>
             <p class="text-sm font-medium mr-20 mb-5">Professional employees are there for you to pick the most amazing and
               fresh fruits.</p>
